@@ -12,4 +12,12 @@ nome_arquivo="recibos/recibo_$(date +%Y%m%d_%H%M%S).txt"
 mkdir -p recibos
 
 echo "=========================" > $nome_arquivo
-echo "       RECIBO" >>
+echo "       RECIBO" >> $nome_arquivo
+echo "=========================" >> $nome_arquivo
+echo "Cliente: $cliente" >> $nome_arquivo
+echo "Serviço: $servico" >> $nome_arquivo
+echo "Valor: R$ $valor" >> $nome_arquivo
+echo "Data: $data" >> $nome_arquivo
+echo "=========================" >> $nome_arquivo
+
+echo "✅ Recibo gerado com sucesso: $nome_arquivo"
