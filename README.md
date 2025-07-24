@@ -43,4 +43,5 @@ Este repositório reúne projetos desenvolvidos para estéticas automotivas, lav
 
 Clone o repositório no Termux:
 ```bash
-git clone https://github.com/seu-usuario/projetos-estetica-automotiva.git
+
+git clone https://github.com/lsilva17/projeto-estetica-automotiva.git
