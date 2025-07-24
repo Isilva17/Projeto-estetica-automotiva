@@ -34,3 +34,19 @@ menu() {
       echo "Nome do produto para remover (busca por nome):"
       read nome
       grep -v "$nome" $arquivo > temp.txt && mv temp.txt $arquivo
+      echo "Produto removido (se existia)."
+      ;;
+    0)
+      exit
+      ;;
+    *)
+      echo "Opção inválida!"
+      ;;
+  esac
+}
+
+while true; do
+  menu
+  echo ""
+  read -p "Pressione Enter para continuar..." pausa
+done
